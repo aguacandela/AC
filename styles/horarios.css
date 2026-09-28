@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    
+    /* 1. CAMBIO VITAL: Permitir que la página crezca */
+    display: flex;
+    flex-direction: column;
+    align-items: center;    /* Mantiene todo centrado horizontalmente */
+    min-height: 100vh;      /* Ocupa el alto total pero permite scroll */
+    
+    /* 2. ELIMINADOS: Quitamos height: 100vh y justify-content: center 
+       porque eso es lo que "aplastaba" el contenido hacia arriba */
+
+    /* 3. ESPACIO PARA LA NAVBAR: Ajusta este valor según el alto de tu logo */
+    padding-top: 160px;     
+}
+
+/* 4. AJUSTE DE LA PRIMERA TABLA */
+.contenedor-tabla-superior {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto 40px; /* 20px de espacio arriba y 40px abajo */
+    text-align: center;
+}
+
+/* 5. SECCIÓN DE LAS OTRAS TABLAS (Horarios y Costos) */
+.seccion-tablas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 40px auto; /* Centrado con espacio */
+    padding: 20px;
+    justify-content: center;
+}
+
+/* El resto de tus estilos de tabla (th, td, hover) están bien y se mantienen */
+.contenedor-tabla {
+    flex: 1;
+    min-width: 300px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #0a0a0a;
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #222;
+}
+
+thead {
+    background-color: #111;
+}
+
+th {
+    color: #00ffcc;
+}
+.moneda {
+    color: #00ffcc;
+    font-family: 'Helvetica', Arial, sans-serif; 
+    font-size: 10px;
+    text-align: left;
+}

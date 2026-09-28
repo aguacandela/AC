@@ -1,0 +1,14 @@
+  body {
+            margin: 0;
+            padding: 0;
+            background-color: black; /* Fondo negro */
+            color: white;           /* Letras blancas */
+            font-family: Arial, sans-serif;
+            
+            /* Centrado total en la pantalla */
+            display: flex;
+            flex-direction: column; /* Alinea los divs uno debajo del otro */
+            justify-content: center; /* Centrado vertical */
+            align-items: center;    /* Centrado horizontal */
+            height: 100vh;          /* Usa todo el alto de la ventana */
+        }
