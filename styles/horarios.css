@@ -5,20 +5,15 @@ body {
     color: white;
     font-family: Arial, sans-serif;
     
-    /* 1. CAMBIO VITAL: Permitir que la página crezca */
     display: flex;
     flex-direction: column;
     align-items: center;    /* Mantiene todo centrado horizontalmente */
     min-height: 100vh;      /* Ocupa el alto total pero permite scroll */
     
-    /* 2. ELIMINADOS: Quitamos height: 100vh y justify-content: center 
-       porque eso es lo que "aplastaba" el contenido hacia arriba */
 
-    /* 3. ESPACIO PARA LA NAVBAR: Ajusta este valor según el alto de tu logo */
     padding-top: 160px;     
 }
 
-/* 4. AJUSTE DE LA PRIMERA TABLA */
 .contenedor-tabla-superior {
     width: 90%;
     max-width: 800px;
@@ -26,7 +21,6 @@ body {
     text-align: center;
 }
 
-/* 5. SECCIÓN DE LAS OTRAS TABLAS (Horarios y Costos) */
 .seccion-tablas {
     display: flex;
     flex-wrap: wrap;
@@ -37,7 +31,6 @@ body {
     justify-content: center;
 }
 
-/* El resto de tus estilos de tabla (th, td, hover) están bien y se mantienen */
 .contenedor-tabla {
     flex: 1;
     min-width: 300px;

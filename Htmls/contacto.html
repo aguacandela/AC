@@ -31,18 +31,22 @@
     </iframe>
 </div>
 
-    <form class="formulario-contacto">
+
+<form class="formulario-contacto" id="formulario-contacto">
         <h2 style="margin-bottom: 20px; color: #00ffcc;">Contáctanos</h2>
         
-        <input type="email" placeholder="Tu Email" class="caja-input" required>
+        <input type="email" id="email" name="email" placeholder="Tu Email" class="caja-input" required>
         
-        <input type="text" placeholder="Asunto" class="caja-input" required>
+        <input type="text" id="asunto" name="asunto"placeholder="Asunto" class="caja-input" required>
         
-        <textarea placeholder="Mensaje" class="caja-input area-texto" required></textarea>
+        <textarea id="mensaje" name="mensaje" placeholder="Mensaje" class="caja-input area-texto" required></textarea>
         
-        <button type="submit" class="boton-enviar">Enviar Mensaje</button>
+        <button type="submit" id="btn-enviar" class="boton-enviar">Enviar Mensaje</button>
+<p id="estado-envio" style="display:none; margin-top: 15px; font-weight: bold;"></p>
     </form>
 </section>
+
+
 <footer class="footer-global">
     <div class="contenedor-redes">
         <a href="https://www.instagram.com/agua.candela/" target="_blank">
