@@ -46,7 +46,7 @@
 /* Efecto al hacer clic en las cajas */
 .caja-input:focus {
     outline: none;
-    border-color: #00ffcc; /* Color neón que ya usamos */
+    border-color: #00ffcc; /*  neón */
 }
 
 /* Botón de enviar */
@@ -64,4 +64,29 @@
 .boton-enviar:hover {
     background-color: white;
     transform: translateY(-2px);
+}
+
+.contenedor-redes-derecho {
+    display: flex;
+    flex-direction:column ; 
+    justify-content: center;
+    gap: 30px; 
+    padding-top: 200px;
+    width: 100px;
+    height:100px; 
+}
+.contenedor-redes-derecho a {
+    font-size: 35px;
+    text-decoration: none; 
+  }
+.icono-redes {
+    margin-top: 20px;
+    width: 50px;      
+    height: 50px;      
+    object-fit: contain;
+    transition: transform 0.2s ease;
+}
+
+.icono-redes:hover {
+    transform: scale(1.15);
 }
